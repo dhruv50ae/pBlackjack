@@ -9,9 +9,26 @@ def dealCard():
     return card
 
 
-userCard = []
-computerCard = []
+def calculateScore(cards):
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
+    if 11 in cards and sum(cards) > 2:
+        cards.remove(11)
+        cards.append(1)
+    return sum(cards)
+
+
+userCards = []
+computerCards = []
+isGameOver = False
 
 for _ in range(2):
-    userCard.append(dealCard())
-    computerCard.append(dealCard())
+    userCards.append(dealCard())
+    computerCards.append(dealCard())
+
+
+userScore = calculateScore(userCards)
+computerScore = calculateScore(computerCards)
+
+if userScore == 0 or computerScore == 0 or userScore > 21:
+    isGameOver = True
