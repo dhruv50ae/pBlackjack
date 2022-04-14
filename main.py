@@ -26,9 +26,23 @@ for _ in range(2):
     userCards.append(dealCard())
     computerCards.append(dealCard())
 
+while not isGameOver:
 
-userScore = calculateScore(userCards)
-computerScore = calculateScore(computerCards)
+    userScore = calculateScore(userCards)
+    computerScore = calculateScore(computerCards)
+    print(f"Your cards: {userCards}, current score: {userScore}")
+    print(f"Computer's first card: {computerCards[0]}")
 
-if userScore == 0 or computerScore == 0 or userScore > 21:
-    isGameOver = True
+    if userScore == 0 or computerScore == 0 or userScore > 21:
+        isGameOver = True
+    else:
+        userShouldDeal = input(
+            "Type 'y' to get another card, type 'n' to pass: ")
+        if userShouldDeal == "y":
+            userCards.append(dealCard())
+        else:
+            isGameOver = True
+
+while computerScore != 0 and computerScore < 17:
+    computerCards.append(dealCard())
+    computerScore = calculateScore(computerCards)
