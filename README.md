@@ -25,7 +25,8 @@
 - Keep the game going on forever ✅
 ## How To Use
 
-- Simply take two numbers, select an operation and the calculator will execute it in that order.
+- Type y or n to start a game, this is reoccuring after and before a game. 
+- Then play a normal game of Blackjack, assuming you are familiar with the game.
 - There is no catch for errors, so the application might break if there are any misinputs
 ## Author Info
 
