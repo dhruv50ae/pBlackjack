@@ -1,6 +1,6 @@
 # Python Blackjack
 
-- Another Classic game of cards. I don't gamble nor do I endorse gambling but this was a great example of using all of my skills to build Blackjack. 
+- Another classic game of cards. I don't gamble nor do I endorse gambling but this was a great example of using all of my skills to build Blackjack. 
 ## Images
 
 <img src = "https://cdn.discordapp.com/attachments/229247596571525120/973533229585952768/unknown.png" />
